@@ -197,11 +197,6 @@ logs/
 wandb/
 tensorboard/
 
-# Generated results
-results/
-
-# Project results
-results/
 
 # Dataset
 data/raw/
