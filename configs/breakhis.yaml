@@ -1,0 +1,28 @@
+dataset:
+  name: BreakHis
+  image_size: 224
+  num_classes: 2
+
+model:
+  patch_size: 16
+  embed_dim: 384
+  encoder_depth: 6
+  num_heads: 6
+  predictor_depth: 4
+
+pretraining:
+  epochs: 20
+  batch_size: 16
+  learning_rate: 0.00005
+  weight_decay: 0.05
+  ema_tau: 0.996
+
+finetuning:
+  batch_size: 16
+  encoder_learning_rate: 0.00001
+  classifier_learning_rate: 0.0001
+  weight_decay: 0.01
+  max_epochs: 20
+  patience: 3
+
+seed: 42

@@ -179,3 +179,23 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Project data
+data/raw/
+*.zip
+*.tar
+*.tar.gz
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Experiment outputs
+runs/
+logs/
+wandb/
+tensorboard/
+
+# Generated results
+results/
